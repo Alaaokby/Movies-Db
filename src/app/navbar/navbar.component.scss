@@ -1,0 +1,26 @@
+@import "../../styles.scss";
+
+.navbar {
+  background-color: $lightBgColor;
+  color: $fontColor;
+  .nav-link {
+    color: $fontColor;
+  }
+  .navbar-brand {
+    font-weight: 900;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+  }
+}
+.icons {
+  margin: 0 6px;
+  cursor: pointer;
+}
+.logout {
+  cursor: pointer;
+}
+.test {
+  background-color: #4294ff;
+  padding: 10px;
+  border-radius: 5px;
+}

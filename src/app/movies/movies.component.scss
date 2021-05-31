@@ -1,0 +1,9 @@
+@import "../../styles.scss";
+
+.line {
+  border: $borderHeight solid $borderColor;
+  margin: 20px 0;
+}
+span {
+  color: $secondFontColor;
+}

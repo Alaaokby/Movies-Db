@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-4">
+    <div>
+      <div class="line w-25"></div>
+      <h4>Trending</h4>
+      <h4>movies</h4>
+      <h4>to watch now</h4>
+      <span class="my-3">Most watched movies by days</span>
+      <div class="line w-100"></div>
+    </div>
+  </div>
+
+  <div *ngFor="let item of trendingMovies" class="col-md-2">
+    <img
+      class="w-100 mb-2"
+      src="https://image.tmdb.org/t/p/w500{{ item.poster_path }}"
+    />
+    <h4>{{ item.title }}</h4>
+    <button class="btn btn-info my-2">
+      <a
+        class="text-white"
+        routerLink="/details/{{ item.media_type }}/{{ item.id }}"
+        >Details</a
+      >
+    </button>
+  </div>
+</div>
